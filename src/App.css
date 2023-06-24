@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+}
+
+.center-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
