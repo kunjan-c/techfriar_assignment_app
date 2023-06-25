@@ -5,8 +5,9 @@ export default function FilterBtn() {
   return (
     <div>
         <button className='filter-btn-contaner'>
+        <img src={FilterIcon}></img>
             <text className='filter-btn-text'>Filter</text>
-            <img src={FilterIcon}></img>
+         
         </button>
     </div>
   )
