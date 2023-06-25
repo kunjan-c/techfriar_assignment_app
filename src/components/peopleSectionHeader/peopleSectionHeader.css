@@ -1,0 +1,17 @@
+.section-header-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 41px;
+  margin: 25px 0px;
+}
+.search-bar-filter-btn-container {
+  display: flex;
+
+  justify-content: flex-end;
+}
+.title-container {
+  display: flex;
+}
