@@ -2,12 +2,15 @@ import React from "react";
 import plusIcon from "assets/svg/addIcon.svg";
 import profilePic from "assets/img/Angela Howard.png";
 import cardOPtion from "assets/svg/cardOptionsIcon.svg";
+import cartIcon from "assets/svg/cart_icon.svg";
+
+import whiteDownArrow from "assets/svg/whiteDownArrowIcon.svg";
 const TreeChartCustomCard = ({ nodeDatum, toggleNode, foreignObjectProps }) => (
   <foreignObject {...foreignObjectProps}>
     <div
       style={{
         width: "190px",
-        height: "96px",
+        height: "150px",
         borderRadius: "8px",
         border: "1px solid #e7e5e4",
         background: "#f6f6f6",
@@ -18,7 +21,7 @@ const TreeChartCustomCard = ({ nodeDatum, toggleNode, foreignObjectProps }) => (
       <h3
         style={{
           textAlign: "center",
-          marginTop: "50px",
+          marginTop: "67px",
           color: "#343341",
           fontSize: "13px",
           fontFamily: "Montserrat",
@@ -32,9 +35,9 @@ const TreeChartCustomCard = ({ nodeDatum, toggleNode, foreignObjectProps }) => (
         alt="cardOptions"
         style={{
           position: "absolute",
-          top:0,
-          right:0
-     
+          top: 0,
+          right: 0,
+          marginRight: "10px",
         }}
       ></img>
       <div
@@ -50,7 +53,7 @@ const TreeChartCustomCard = ({ nodeDatum, toggleNode, foreignObjectProps }) => (
         {nodeDatum.designation}
       </div>
       <img
-        src={profilePic}
+        src={nodeDatum.profilePicImg}
         style={{
           position: "absolute",
           left: 75,
@@ -80,19 +83,65 @@ const TreeChartCustomCard = ({ nodeDatum, toggleNode, foreignObjectProps }) => (
           >
             <img src={plusIcon}></img>
           </div>
-          {<div>{nodeDatum.country ? <div>HIII</div> : <div>BYY</div>}</div>}
         </div>
       )}
-    </div>
-    {/* <img
-        src={profilePic}
+      <div
         style={{
-          position: "absolute",
-          left: 50,
-          right: 50,
-          top: 0,
+          display: "flex",
+          justifyContent: "center",
         }}
-      ></img> */}
+      >
+        {nodeDatum.department && (
+          <div
+            style={{
+              width: "58px",
+              height: "18px",
+              borderRadius: "100px",
+              background: "#5040A5",
+              color: "#FFFF",
+              fontSize: "10px",
+              fontFamily: "Montserrat",
+              fontWeight: 600,
+              display: "flex",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+              marginTop: "10px",
+            }}
+          >
+            <img src={cartIcon}></img>
+            <span>{nodeDatum.department}</span>
+          </div>
+        )}
+      </div>
+      <div>
+        {nodeDatum.employeeLength && (
+          <div
+            style={{
+              borderRadius: "12px",
+              border: "1px solid #0D99FE",
+              background: "#0D99FE",
+              color: "white",
+              padding: "4px 6px",
+              //   width: "30px",
+              //   height: "10px",
+              position: "absolute",
+              bottom: 0,
+              left: "42px",
+              marginBottom: "-10px",
+              color: "white",
+              textAlign: "center",
+              fontSize: "10px",
+              fontFamily: "Montserrat",
+              fontWeight: "600px",
+            }}
+          >
+            {nodeDatum.employeeLength ? `${nodeDatum.employeeLength}` : null}
+            <img src={whiteDownArrow}></img>
+          </div>
+          
+        )}
+      </div>
+    </div>
   </foreignObject>
 );
 export default TreeChartCustomCard;
