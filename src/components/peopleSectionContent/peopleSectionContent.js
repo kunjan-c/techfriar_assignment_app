@@ -2,6 +2,7 @@ import PplSecCtaBtns from "components/ctaBtns/pplSecCtaBtns";
 import PeopleSectionHeader from "components/peopleSectionHeader/peopleSectionHeader";
 import React from "react";
 import "./peopleSectionContent.css";
+import OrgChart from "components/orgChart/orgChart";
 
 
 export default function PeopleSectionContent() {
@@ -12,6 +13,8 @@ export default function PeopleSectionContent() {
       </div>
       <div className="ppl-main-content">
         <PplSecCtaBtns></PplSecCtaBtns>
+      
+        <OrgChart></OrgChart>
       </div>
     </div>
   );

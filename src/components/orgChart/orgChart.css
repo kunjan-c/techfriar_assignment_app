@@ -1,0 +1,54 @@
+.custom-link {
+  stroke: #e2fb00;
+}
+/* .rd3t-svg{
+  stroke: red;
+} */
+.main-card {
+  width: 226px;
+  height: 96px;
+  border-radius: 8px;
+  border: 1px solid #e7e5e4;
+  background: #f6f6f6;
+  position: relative;
+}
+.card-profile-img{
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+.label-title{
+  display: flex;
+  justify-content: center;
+}
+.label-subtitle{
+  display: flex;
+  justify-content: center;
+}
+.card-profile-img{
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.node__branch > h3{
+  fill: #e2fb00;
+  stroke: aqua;
+  stroke-width: 10;
+  width: 100px;
+  background-color: tan;
+  color: red;
+}
+.link__to-branch{
+  stroke: green;
+}
+.chart-main-container{
+  background-color: #e2fb00;
+  width: 100%;
+}
+.custom-link{
+  stroke: purple;
+  stroke-width: 20px;
+  color: red;
+  
+}
