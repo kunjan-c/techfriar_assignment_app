@@ -18,6 +18,10 @@ body {
   padding-left: 102px;
   padding-right: 32px;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   
+}
+.zooming-container{
+  display: flex;
+  justify-content: flex-end;
 }

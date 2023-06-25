@@ -36,9 +36,11 @@ const employeeData = {
           designation: "CFO",
           profilePicImg: kaif,
         },
+    
       ],
    
     },
+    
     {
       name: " Dan Morgan",
       designation: "Regional Director",

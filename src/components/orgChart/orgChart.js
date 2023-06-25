@@ -9,12 +9,14 @@ export default function OrgChart() {
 
 
   const nodeSize = { x: 200, y: 200 };
+
   const foreignObjectProps = {
     width: nodeSize.x,
     height: nodeSize.y,
     x: -100,
     y: -100,
   };
+  
 
   // const getDynamicPathClass = ({ source, target }, orientation) => {
   //   return "link__to-branch";
@@ -32,6 +34,8 @@ export default function OrgChart() {
   };
 
   const [translate, containerRef] = useCenteredTree();
+
+
   return (
     // `<Tree />` will fill width/height of its container; in this case `#treeWrapper`.
     <div className="chart-main-container">
@@ -56,10 +60,11 @@ export default function OrgChart() {
             TreeChartCustomCard({ ...rd3tProps, foreignObjectProps })
           }
           branchNodeClassName={"node__branch"}
-          // zoom={2}
+          // zoom={5}
           translate={translate}
           nodeSize={nodeSize}
           draggable={false}
+        
           // zoomable={false}
         />
       </div>
