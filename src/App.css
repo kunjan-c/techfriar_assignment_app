@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+.center-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-page-structure {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar-main-container {
+  background-color: aqua;
+}
+.main-section-content-container {
+  padding-left: 102px;
+  padding-right: 32px;
+  width: 100%;
+  /* overflow-x: hidden; */
+  
+}
+.zooming-container{
+  display: flex;
+  justify-content: flex-end;
+}

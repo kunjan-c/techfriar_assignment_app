@@ -1,10 +1,12 @@
-
-import './App.css';
+import Sidebar from "components/sidebar/sidebar";
+import "./App.css";
+import Homepage from "pages/homepage";
 
 function App() {
   return (
     <div className="App">
-hello from kunjan
+      {/* <Sidebar></Sidebar> */}
+      <Homepage></Homepage>
     </div>
   );
 }
