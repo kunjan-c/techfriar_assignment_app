@@ -1,13 +1,12 @@
-.zoom-icon-container{
-    width: 34px;
-    height: 70px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-border-radius: 10px;
-    border: 1px solid #E7E5E4;
+.zoom-icon-container {
+  width: 34px;
+  height: 70px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid #e7e5e4;
 }
-.plus-minus-icon-container{
-    padding: 10px;
-
+.plus-minus-icon-container {
+  padding: 10px;
 }

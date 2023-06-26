@@ -5,9 +5,6 @@ import { employeeData } from "components/data/employeeData";
 import TreeChartCustomCard from "components/treeChartCustomCard/treeChartCustomCard";
 
 export default function OrgChart() {
-
-
-
   const nodeSize = { x: 200, y: 200 };
 
   const foreignObjectProps = {
@@ -16,7 +13,6 @@ export default function OrgChart() {
     x: -100,
     y: -100,
   };
-  
 
   // const getDynamicPathClass = ({ source, target }, orientation) => {
   //   return "link__to-branch";
@@ -35,7 +31,6 @@ export default function OrgChart() {
 
   const [translate, containerRef] = useCenteredTree();
 
-
   return (
     // `<Tree />` will fill width/height of its container; in this case `#treeWrapper`.
     <div className="chart-main-container">
@@ -52,20 +47,15 @@ export default function OrgChart() {
         ref={containerRef}
       >
         <Tree
-          pathClassFunc={() => "custom-link"}
           data={employeeData}
+          depthFactor="190"
           orientation="vertical"
-          depthFactor={0}
           renderCustomNodeElement={(rd3tProps) =>
             TreeChartCustomCard({ ...rd3tProps, foreignObjectProps })
           }
-          branchNodeClassName={"node__branch"}
-          // zoom={5}
           translate={translate}
           nodeSize={nodeSize}
           draggable={false}
-        
-          // zoomable={false}
         />
       </div>
     </div>

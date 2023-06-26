@@ -1,9 +1,4 @@
-.custom-link {
-  stroke: #e2fb00;
-}
-/* .rd3t-svg{
-  stroke: red;
-} */
+
 .main-card {
   width: 226px;
   height: 96px;
@@ -31,24 +26,9 @@
   left: 0;
   right: 0;
 }
-.node__branch > h3{
-  fill: #e2fb00;
-  stroke: aqua;
-  stroke-width: 10;
-  width: 100px;
-  background-color: tan;
-  color: red;
-}
-.link__to-branch{
-  stroke: green;
-}
+
+
 .chart-main-container{
   background-color: #e2fb00;
   width: 100%;
-}
-.custom-link{
-  stroke: purple;
-  stroke-width: 20px;
-  color: red;
-  
 }
